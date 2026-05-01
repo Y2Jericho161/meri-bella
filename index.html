@@ -1,11 +1,187 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-    <meta charset="UTF-8">
-    <title>Приказният свят на Мери Белла</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Приказният свят на Мери Белла</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #fdf6ff;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #ffd6ec, #d6f0ff);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background: #ff8ac6;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #f3e8ff;
+    padding: 30px;
+    text-align: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #ff8ac6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+</style>
 </head>
+
 <body>
+
+<header>
     <h1>Приказният свят на Мери Белла</h1>
-    <p>Сайтът се създава...</p>
+    <p>Магическо място за детски усмивки и незабравими празници</p>
+    <a href="#booking" class="btn">Резервирай сега</a>
+    <a href="#services" class="btn">Разгледай услугите</a>
+</header>
+
+<section class="section">
+    <h2>Добре дошли</h2>
+    <p style="text-align:center;">
+        „Приказният свят на Мери Белла“ е създаден с много любов и внимание към детайла. 
+        Тук децата се потапят в магична атмосфера, изпълнена с игри, смях и незабравими моменти. 
+        Ние се грижим всеки празник да бъде специален и изпълнен с радост.
+    </p>
+</section>
+
+<section id="services" class="section">
+    <h2>Нашите услуги</h2>
+    <div class="cards">
+        <div class="card"><h3>🎂 Рождени дни</h3><p>Професионално организирани празници с внимание към всеки детайл.</p></div>
+        <div class="card"><h3>🎭 Тематични партита</h3><p>Любими герои и приказни теми, които оживяват.</p></div>
+        <div class="card"><h3>🎈 Специални събития</h3><p>Празници, които оставят спомени за цял живот.</p></div>
+        <div class="card"><h3>🧸 Детски кът</h3><p>Безопасно и забавно пространство за игри.</p></div>
+        <div class="card"><h3>☕ Зона за родители</h3><p>Уют и спокойствие, докато децата се забавляват.</p></div>
+        <div class="card"><h3>🌿 Лятна градина</h3><p>Прекрасно място с изглед към детския кът.</p></div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>За нас</h2>
+    <p style="text-align:center;">
+        За нас най-важни са детските усмивки. Подхождаме с грижа, внимание и професионализъм, 
+        за да създадем безопасна и вълшебна среда за всяко дете. 
+        Вярваме, че всеки празник заслужава да бъде незабравим.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Отзиви</h2>
+    <div class="testimonial">
+        <strong>Виолета И.</strong><br>
+        Изключително уютно и прекрасно място! Детето ми беше много щастливо.
+    </div>
+    <div class="testimonial">
+        <strong>Даниела И.</strong><br>
+        Невероятна организация и внимание към детайла. Препоръчвам с две ръце!
+    </div>
+    <div class="testimonial">
+        <strong>Мария П.</strong><br>
+        Прекрасна атмосфера и страхотно отношение. Ще празнуваме отново!
+    </div>
+</section>
+
+<section class="section">
+    <h2>Контакти</h2>
+    <p><strong>Адрес:</strong> Ladovisa, bul. "Yuriy Gagarin" 27, 2304 Pernik</p>
+    <p><strong>Телефон:</strong> <a href="tel:0878616999">087 861 6999</a></p>
+    <p><strong>Работно време:</strong> Понеделник – Неделя: 9:00 – 22:00</p>
+    <p>Очакваме ви с усмивка и желание да създадем незабравими моменти!</p>
+</section>
+
+<section id="booking" class="section">
+    <h2>Резервация</h2>
+    <form>
+        <input type="text" placeholder="Име" required>
+        <input type="tel" placeholder="Телефон" required>
+        <input type="email" placeholder="Имейл">
+        <input type="date" required>
+
+        <select required>
+            <option value="">Вид събитие</option>
+            <option>Рожден ден</option>
+            <option>Тематично парти</option>
+            <option>Друго</option>
+        </select>
+
+        <textarea placeholder="Съобщение"></textarea>
+
+        <button type="submit">Изпрати запитване</button>
+    </form>
+</section>
+
+<footer>
+    <p>© Приказният свят на Мери Белла</p>
+</footer>
+
 </body>
 </html>
